@@ -1,0 +1,19 @@
+''''answer 3'''
+a=int(input())
+b=list(map(int,input().split()))
+c=list(map(int,input().split()))
+sam=0
+john=0
+for i in range(a):
+    if b[i]>c[i]:
+        sam+=1
+    elif b[i]<c[i]:
+        john+=1
+    else:
+        continue
+print("Sam ",sam)
+print("John ",john)
+if sam<john:
+    print("John won the competition")
+else:
+    print("Sam won the competition")

@@ -1,0 +1,24 @@
+'''answer 6'''
+a=input()
+dig=""
+alpha=""
+small=""
+space=0
+symb=""
+even=""
+odd=""
+for i in range(len(a)):
+    if ord(a[i])>=48 and ord(a[i])<=57:
+        if int(a[i])%2==0:
+            even+=a[i]
+        else:
+            odd+=a[i]
+    elif ord(a[i])>=65 and ord(a[i])<=91:
+        alpha+=a[i]
+    elif ord(a[i])>=97 and ord(a[i])<=122:
+        small+=a[i]
+    elif ord(a[i])==32:
+        space+=1
+    else:
+        symb+=a[i]
+print(symb+' '+small+' '+alpha+' '+odd+' '+even+' '+str(space))

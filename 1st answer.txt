@@ -1,0 +1,12 @@
+''' answer 1'''
+def traintime(z):
+    if z[-2:]=="AM" and z[:2]=="12":
+        return "00"+z[2:-2]
+    elif z[-2:]=="AM":
+        return z[:-2]
+    elif z[-2:]=="PM" and z[:2]=="12":
+        return z[-2]
+    else:
+        return str(int(z[:2])+12)+z[2:8]
+s=input('enter the time:-')
+print(traintime(s))

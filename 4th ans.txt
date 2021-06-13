@@ -1,0 +1,8 @@
+'''answer 4'''
+a=list(map(str,input().split()))
+b=set(a)
+print(b)
+for i in b:
+    c=0
+    c=a.count(i)
+    print(i,len(i),c)
